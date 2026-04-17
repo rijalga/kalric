@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Kalkulator Pintar + Soal Cerita</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator">
+    <!-- Layar display -->
+    <div class="display" id="display">0</div>
+
+    <!-- Tombol-tombol -->
+    <div class="buttons">
+      <button class="btn btn-ac" data-action="clear">AC</button>
+      <button class="btn btn-mod" data-op="mod">%</button>
+      <button class="btn btn-op" data-op="/">÷</button>
+      <button class="btn btn-op" data-op="*">×</button>
+
+      <button class="btn btn-num" data-num="7">7</button>
+      <button class="btn btn-num" data-num="8">8</button>
+      <button class="btn btn-num" data-num="9">9</button>
+      <button class="btn btn-op" data-op="-">-</button>
+
+      <button class="btn btn-num" data-num="4">4</button>
+      <button class="btn btn-num" data-num="5">5</button>
+      <button class="btn btn-num" data-num="6">6</button>
+      <button class="btn btn-op" data-op="+">+</button>
+
+      <button class="btn btn-num" data-num="1">1</button>
+      <button class="btn btn-num" data-num="2">2</button>
+      <button class="btn btn-num" data-num="3">3</button>
+      <button class="btn btn-equals" id="equals">=</button>
+
+      <button class="btn btn-num" data-num="0">0</button>
+      <button class="btn btn-dot" data-dot=".">.</button>
+      <button class="btn btn-prompt" id="promptBtn">📥 Prompt</button>
+    </div>
+
+    <!-- Fitur Natural Language / Soal Cerita -->
+    <div class="word-problem-section">
+      <input type="text" id="wordProblemInput" placeholder="Contoh: 5 apel ditambah 3 jeruk, 20 kue dibagi 4 anak, total 10 dan 5" />
+      <button id="solveWordProblemBtn">🧠 Selesaikan Soal Cerita</button>
+    </div>
+
+    <div class="console-info">
+      📢 Buka Console (F12) → lihat log setiap operasi & variabel
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
